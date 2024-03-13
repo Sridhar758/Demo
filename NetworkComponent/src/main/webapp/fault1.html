@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+    
+        color: #333;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+ 
+<h2 >Fault Rise</h2>
+    <form action="faultdisplay" method="post">
+    
+        
+        <label for="component_id">Component ID:</label>
+        <input type="text" id="component_id" name="component_id" required><br><br>
+       
+     
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br><br>
+       
+        
+        <button onclick="editRow()" type="submit">Submit</button>
+        
+        <script>
+            function editRow() {
+        // Add logic to handle editing the row with the given scheduleId
+        alert("Successfully added");
+    }
+ 
+        </script>
+        
+    </form>
+   
+</body>
+</html>
